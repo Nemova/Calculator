@@ -8,13 +8,19 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-        <VBox>
-            <TextArea fx:id="primerTextArea"/>
-            <HBox>
-                <Button text="Calculate" fx:id="calculateButton"/>
-                <TextField fx:id="resultTextField"/>
-            </HBox>
-        </VBox>
+<GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml"
+            prefHeight="200" prefWidth="320"
+            alignment="center" hgap="10" vgap="10">
+                <TextField fx:id="TextField1"
+                GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="TextFieldz"
+                GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <TextField fx:id="TextField2"
+                GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+                <Button text="Calculate" fx:id="calculateButton"
+                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <TextField fx:id="TextFieldres"
+                GridPane.rowIndex="1" GridPane.columnIndex="1"/>
 </GridPane>
